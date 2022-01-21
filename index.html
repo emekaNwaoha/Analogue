@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" =content="width=device-width initial-scale=1.0">
+    <title>
+        Analog Clock
+    </title>
+    <script src="analogue.js"></script>
+    <style>
+        body {
+            background-color:rgb(25, 25, 235);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+
+        .radius {
+            position: absolute;
+            width: 450px;
+            height: 500px;
+            background-color:white;
+            left: 250px;
+            top: 75px;
+            border-top-right-radius: 350px;
+            border-top-left-radius: 350px;
+            border-bottom-right-radius: 350px;
+            border-bottom-left-radius: 350px;
+            border: 10px solid black;
+        
+
+        }
+        .rotate{position: absolute;
+            height:55px ;
+            width: 55px;
+            border-radius: 55px;
+            background-color: black;
+            bottom: 250px;
+            left: 200px;
+        }
+
+        .seconds {
+            position: absolute;
+            height: 200px;
+            left: 215px;
+            top: 100px;
+        }
+
+        .visible {
+            position: absolute;
+            border: 2px solid red;
+            height: 100px;
+
+
+        }
+
+        .none {
+            position: absolute;
+            border: 2px solid white;
+            height: 100px;
+            top: 100px;
+        }
+
+        .minute {
+            position: absolute;
+            height: 300px;
+            left: 245px;
+            top: 85px;
+        }
+
+        .visible2 {
+            position: absolute;
+            border: 3px solid black;
+            height: 120px;
+
+
+        }
+
+        .none2 {
+            position: absolute;
+
+
+
+
+        }
+
+
+        .hour {
+            position: absolute;
+            height: 300px;
+            right: 225px;
+        bottom: 150px;
+
+        }
+
+        .visible3 {
+            position: absolute;
+            border: 3px solid gray;
+           height: 100px;
+            left: 20px;
+        }
+
+        .none3 {
+            position: absolute;
+            background-color: rgb(194, 14, 14);
+            height: 50px;
+           
+        }
+        .numbers{
+            position: absolute;
+            left:25px;
+            
+
+        }
+     
+        .one {
+            position: absolute;
+            top: 40px;
+            left: 270px;
+            color: black;
+            font-size: 40px;
+
+        }
+
+       
+
+        .two {
+            position: absolute;
+
+            top: 90px;
+            left: 350px;
+            color: black;
+            font-size: 40px;
+
+        }
+
+        
+
+        .three {
+            position: absolute;
+
+            color: black;
+            font-size: 40px;
+            top: 190px;
+            left: 380px;
+
+        }
+
+        
+
+        .four {
+            position: absolute;
+
+            color: black;
+            font-size: 40px;
+            top: 290px;
+            left: 350px;
+        }
+
+       
+
+        .five {
+            position: absolute;
+            color: black;
+            font-size: 40px;
+            top: 380px;
+            left: 280px;
+        }
+
+     
+        .six {
+            position: absolute;
+
+            color: black;
+            font-size: 40px;
+            top: 420px;
+            left: 190px;
+        }
+
+       
+
+        .seven {
+            position: absolute;
+
+            color: black;
+            font-size: 40px;
+            top: 370px;
+            left: 80px;
+        }
+
+        
+
+        .eight {
+            position: absolute;
+
+            color: black;
+            font-size: 40px;
+            top: 290px;
+            left: 20px;
+        }
+
+       
+
+        .nine {
+            position: absolute;
+            color: black;
+            font-size: 40px;
+            top: 180px;
+        }
+
+       
+
+        .ten {
+            position: absolute;
+
+            color: black;
+            font-size: 40px;
+            top: 85px;
+            left: 40px;
+        }
+
+
+        .eleven {
+            position: absolute;
+
+            color: black;
+            font-size: 40px;
+            top: 30px;
+            left: 110px;
+
+        }
+
+        
+
+        .twelve {
+            position: absolute;
+            color: black;
+            font-size: 40px;
+            top: 10px;
+            left: 180px;
+        }
+
+
+        h1 {
+            position: absolute;
+            color: white;
+            left: 380px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ANALOGUE CLOCK</h1>
+    <div class="radius" id="radius">
+        <div class="rotate"></div>
+
+        <div class="seconds" id="seconds">
+            <div class="visible"></div>
+            <div class="none"></div>
+        </div>
+        <div class="minute" id="minute">
+            <div class="visible2"></div>
+            <div class="none2"></div>
+        </div>
+        <div class="hour" id="hour">
+            <div class="visible3"></div>
+            <div class="none3"></div>
+        </div>
+    <div
+    class="numbers">
+        <div class="one" id="one">1</div>
+
+    
+        <div class="two" id="two">2</div>
+    
+        <div class="three" id="three">3</div>
+
+    
+        <div class="four" id="four">4</div>
+    
+    
+        <div class="five" id="five"> 5</div>
+    
+    
+        <div class="six" id="six">6</div>
+
+    
+        <div class="seven" id="seven">7</div>
+
+        <div class="eight" id="eight">8</div>
+    
+
+        <div class="nine" id="nine">9</div>
+    
+    
+        <div class="ten" id="ten">10</div>
+
+    
+        <div class="eleven" id="eleven">11</div>
+    
+        <div class="twelve" id="twelve">12</div>
+    </div>
+    </div>
+</body>
+
+</html>
